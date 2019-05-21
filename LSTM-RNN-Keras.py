@@ -28,7 +28,7 @@ observations that we can use to train our model, leaving the remaining 33% for t
 train_size = int(len(dataset) * 0.67)
 test_size = len(dataset) - train_size
 train, test = dataset[0:train_size,:], dataset[train_size:len(dataset),:]
-print "train_data_size: "+str(len(train)), " test_data_size: "+str(len(test))
+print "train_data_size: " + str(len(train)), " test_data_size: "+str(len(test))
 
 # convert an array of values into a dataset matrix
 def create_dataset(dataset, look_back=1):

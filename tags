@@ -1,0 +1,86 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
+X	3d-graph.py	/^X = X.flatten()$/;"	v
+X	3d-graph.py	/^X, Y = np.meshgrid(x, x)$/;"	v
+Y	3d-graph.py	/^X, Y = np.meshgrid(x, x)$/;"	v
+Y	3d-graph.py	/^Y = Y.flatten()$/;"	v
+Z	3d-graph.py	/^Z = -5 + 3*X - 3*Y + 8 * np.random.normal(size=X.shape)$/;"	v
+Z	3d-graph.py	/^Z = Z.flatten()$/;"	v
+anova_results	3d-graph.py	/^anova_results = anova_lm(model)$/;"	v
+array_x	multiple-linear-regression-scikit-learn.py	/^array_x = np.array(list_x)$/;"	v
+array_x	simple-linear-regression-scikit-learn.py	/^array_x = array_x.reshape((-1, 1))$/;"	v
+array_x	simple-linear-regression-scikit-learn.py	/^array_x = np.array(list_x)$/;"	v
+array_y	multiple-linear-regression-scikit-learn.py	/^array_y = np.array(list_y)$/;"	v
+array_y	simple-linear-regression-scikit-learn.py	/^array_y = np.array(list_y)$/;"	v
+ax	3d-graph.py	/^ax = fig.gca(projection='3d')$/;"	v
+coefficients	polinomial-regression-scikit-learn.py	/^intercept, coefficients = model.intercept_, model.coef_$/;"	v
+create_dataset	LSTM-RNN-Keras.py	/^def create_dataset(dataset, look_back=1):$/;"	f
+data	3d-graph.py	/^data = pandas.DataFrame({'x': X, 'y': Y, 'z': Z})$/;"	v
+dataframe	LSTM-RNN-Keras.py	/^dataframe = pandas.read_csv('international-airline-passengers.csv', usecols=[1], engine='python'/;"	v
+dataset	LSTM-RNN-Keras.py	/^dataset = dataframe.values$/;"	v
+dataset	LSTM-RNN-Keras.py	/^dataset = dataset.astype('float32')$/;"	v
+dataset	LSTM-RNN-Keras.py	/^dataset = scaler.fit_transform(dataset)$/;"	v
+df	cleaner.py	/^df  = pd.read_csv("ile.csv")$/;"	v
+fig	3d-graph.py	/^fig = plt.figure()$/;"	v
+intercept	polinomial-regression-scikit-learn.py	/^intercept, coefficients = model.intercept_, model.coef_$/;"	v
+list_x	multiple-linear-regression-scikit-learn.py	/^list_x = [[0, 1], [5, 1], [15, 2], [25, 5], [35, 11], [45, 15], [55, 34], [60, 35]]$/;"	v
+list_x	simple-linear-regression-scikit-learn.py	/^list_x = [5, 15, 25, 35, 45, 55]$/;"	v
+list_y	multiple-linear-regression-scikit-learn.py	/^list_y = [5, 20, 14, 32, 22, 38, 43, 55]$/;"	v
+list_y	simple-linear-regression-scikit-learn.py	/^list_y = [5, 20, 14, 32, 22, 38]$/;"	v
+look_back	LSTM-RNN-Keras.py	/^look_back = 1$/;"	v
+model	3d-graph.py	/^model = ols("z ~ x + y", data).fit()$/;"	v
+model	LSTM-RNN-Keras.py	/^model = Sequential()$/;"	v
+model	multiple-linear-regression-scikit-learn.py	/^model = LinearRegression()$/;"	v
+model	polinomial-regression-scikit-learn.py	/^model = LinearRegression().fit(x_, y)$/;"	v
+model	simple-linear-regression-scikit-learn.py	/^model = LinearRegression()$/;"	v
+np	3d-graph.py	/^import numpy as np$/;"	I
+np	multiple-linear-regression-scikit-learn.py	/^import numpy as np$/;"	I
+np	polinomial-regression-scikit-learn.py	/^import numpy as np$/;"	I
+np	simple-linear-regression-scikit-learn.py	/^import numpy as np$/;"	I
+pd	cleaner.py	/^import pandas as pd$/;"	I
+plt	3d-graph.py	/^import matplotlib.pyplot as plt$/;"	I
+plt	LSTM-RNN-Keras.py	/^import matplotlib.pyplot as plt$/;"	I
+plt	cleaner.py	/^import matplotlib.pyplot as plt$/;"	I
+r_sq	polinomial-regression-scikit-learn.py	/^r_sq = model.score(x_, y)$/;"	v
+scaler	LSTM-RNN-Keras.py	/^scaler = MinMaxScaler(feature_range=(0, 1))$/;"	v
+surf	3d-graph.py	/^surf = ax.plot_surface(X, Y, Z, cmap=plt.cm.coolwarm,$/;"	v
+test	LSTM-RNN-Keras.py	/^train, test = dataset[0:train_size,:], dataset[train_size:len(dataset),:]$/;"	v
+testPredict	LSTM-RNN-Keras.py	/^testPredict = model.predict(testX)$/;"	v
+testPredict	LSTM-RNN-Keras.py	/^testPredict = scaler.inverse_transform(testPredict)$/;"	v
+testPredictPlot	LSTM-RNN-Keras.py	/^testPredictPlot = numpy.empty_like(dataset)$/;"	v
+testScore	LSTM-RNN-Keras.py	/^testScore = math.sqrt(mean_squared_error(testY[0], testPredict[:,0]))$/;"	v
+testX	LSTM-RNN-Keras.py	/^testX = numpy.reshape(testX, (testX.shape[0], 1, testX.shape[1]))$/;"	v
+testX	LSTM-RNN-Keras.py	/^testX, testY = create_dataset(test, look_back)$/;"	v
+testY	LSTM-RNN-Keras.py	/^testX, testY = create_dataset(test, look_back)$/;"	v
+testY	LSTM-RNN-Keras.py	/^testY = scaler.inverse_transform([testY])$/;"	v
+test_size	LSTM-RNN-Keras.py	/^test_size = len(dataset) - train_size$/;"	v
+train	LSTM-RNN-Keras.py	/^train, test = dataset[0:train_size,:], dataset[train_size:len(dataset),:]$/;"	v
+trainPredict	LSTM-RNN-Keras.py	/^trainPredict = model.predict(trainX)$/;"	v
+trainPredict	LSTM-RNN-Keras.py	/^trainPredict = scaler.inverse_transform(trainPredict)$/;"	v
+trainPredictPlot	LSTM-RNN-Keras.py	/^trainPredictPlot = numpy.empty_like(dataset)$/;"	v
+trainScore	LSTM-RNN-Keras.py	/^trainScore = math.sqrt(mean_squared_error(trainY[0], trainPredict[:,0]))$/;"	v
+trainX	LSTM-RNN-Keras.py	/^trainX = numpy.reshape(trainX, (trainX.shape[0], 1, trainX.shape[1]))$/;"	v
+trainX	LSTM-RNN-Keras.py	/^trainX, trainY = create_dataset(train, look_back)$/;"	v
+trainY	LSTM-RNN-Keras.py	/^trainX, trainY = create_dataset(train, look_back)$/;"	v
+trainY	LSTM-RNN-Keras.py	/^trainY = scaler.inverse_transform([trainY])$/;"	v
+train_size	LSTM-RNN-Keras.py	/^train_size = int(len(dataset) * 0.67)$/;"	v
+x	3d-graph.py	/^x = np.linspace(0, 20, 20)$/;"	v
+x	cleaner.py	/^x = list(x)$/;"	v
+x	cleaner.py	/^x = open('ile.csv')$/;"	v
+x	polinomial-regression-scikit-learn.py	/^x = [[0, 1], [5, 1], [15, 2], [25, 5], [35, 11], [45, 15], [55, 34], [60, 35]]$/;"	v
+x	polinomial-regression-scikit-learn.py	/^x, y = np.array(x), np.array(y)$/;"	v
+x_	polinomial-regression-scikit-learn.py	/^x_ = PolynomialFeatures(degree=2, include_bias=False).fit_transform(x)$/;"	v
+x_estimated	multiple-linear-regression-scikit-learn.py	/^x_estimated = np.array([[65, 45]])$/;"	v
+x_estimated	simple-linear-regression-scikit-learn.py	/^x_estimated = np.array([65])$/;"	v
+x_estimated	simple-linear-regression-scikit-learn.py	/^x_estimated = x_estimated.reshape((-1, 1))$/;"	v
+y	cleaner.py	/^    y = i.split(',')$/;"	v
+y	polinomial-regression-scikit-learn.py	/^x, y = np.array(x), np.array(y)$/;"	v
+y	polinomial-regression-scikit-learn.py	/^y = [4, 5, 20, 14, 32, 22, 38, 43]$/;"	v
+y_estimated	multiple-linear-regression-scikit-learn.py	/^y_estimated = model.predict(x_estimated)$/;"	v
+y_estimated	simple-linear-regression-scikit-learn.py	/^y_estimated = model.predict(x_estimated)$/;"	v
+y_pred	polinomial-regression-scikit-learn.py	/^y_pred = model.predict(x_)$/;"	v

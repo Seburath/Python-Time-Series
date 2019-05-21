@@ -1,4 +1,3 @@
-
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas
@@ -10,7 +9,6 @@ from mpl_toolkits.mplot3d import Axes3D
 from statsmodels.formula.api import ols
 # Analysis of Variance (ANOVA) on linear models
 from statsmodels.stats.anova import anova_lm
-
 
 x = np.linspace(0, 20, 20)
 # We generate a 2D grid
