@@ -7,17 +7,26 @@
 !_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
 X	3d-graph.py	/^X = X.flatten()$/;"	v
 X	3d-graph.py	/^X, Y = np.meshgrid(x, x)$/;"	v
+X	KNN-sklearn.py	/^X = iris.data[:, :2]$/;"	v
+X	decision-tree-sklearn.py	/^X = dataset.drop('Petrol_Consumption', axis=1)  $/;"	v
+X_test	decision-tree-sklearn.py	/^X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)  $/;"	v
+X_train	decision-tree-sklearn.py	/^X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)  $/;"	v
 Y	3d-graph.py	/^X, Y = np.meshgrid(x, x)$/;"	v
 Y	3d-graph.py	/^Y = Y.flatten()$/;"	v
 Z	3d-graph.py	/^Z = -5 + 3*X - 3*Y + 8 * np.random.normal(size=X.shape)$/;"	v
 Z	3d-graph.py	/^Z = Z.flatten()$/;"	v
+Z	KNN-sklearn.py	/^    Z = Z.reshape(xx.shape)$/;"	v
+Z	KNN-sklearn.py	/^    Z = clf.predict(np.c_[xx.ravel(), yy.ravel()])$/;"	v
 anova_results	3d-graph.py	/^anova_results = anova_lm(model)$/;"	v
-array_x	multiple-linear-regression-scikit-learn.py	/^array_x = np.array(list_x)$/;"	v
-array_x	simple-linear-regression-scikit-learn.py	/^array_x = array_x.reshape((-1, 1))$/;"	v
-array_x	simple-linear-regression-scikit-learn.py	/^array_x = np.array(list_x)$/;"	v
-array_y	multiple-linear-regression-scikit-learn.py	/^array_y = np.array(list_y)$/;"	v
-array_y	simple-linear-regression-scikit-learn.py	/^array_y = np.array(list_y)$/;"	v
+array_x	multiple-linear-regression-sklearn.py	/^array_x = np.array(list_x)$/;"	v
+array_x	simple-linear-regression-sklearn.py	/^array_x = array_x.reshape((-1, 1))$/;"	v
+array_x	simple-linear-regression-sklearn.py	/^array_x = np.array(list_x)$/;"	v
+array_y	multiple-linear-regression-sklearn.py	/^array_y = np.array(list_y)$/;"	v
+array_y	simple-linear-regression-sklearn.py	/^array_y = np.array(list_y)$/;"	v
 ax	3d-graph.py	/^ax = fig.gca(projection='3d')$/;"	v
+clf	KNN-sklearn.py	/^    clf = neighbors.KNeighborsClassifier(n_neighbors, weights=weights)$/;"	v
+cmap_bold	KNN-sklearn.py	/^cmap_bold = ListedColormap(['#FF0000', '#00FF00', '#0000FF'])$/;"	v
+cmap_light	KNN-sklearn.py	/^cmap_light = ListedColormap(['#FFAAAA', '#AAFFAA', '#AAAAFF'])$/;"	v
 coefficients	polinomial-regression-scikit-learn.py	/^intercept, coefficients = model.intercept_, model.coef_$/;"	v
 create_dataset	LSTM-RNN-Keras.py	/^def create_dataset(dataset, look_back=1):$/;"	f
 data	3d-graph.py	/^data = pandas.DataFrame({'x': X, 'y': Y, 'z': Z})$/;"	v
@@ -25,28 +34,39 @@ dataframe	LSTM-RNN-Keras.py	/^dataframe = pandas.read_csv('international-airline
 dataset	LSTM-RNN-Keras.py	/^dataset = dataframe.values$/;"	v
 dataset	LSTM-RNN-Keras.py	/^dataset = dataset.astype('float32')$/;"	v
 dataset	LSTM-RNN-Keras.py	/^dataset = scaler.fit_transform(dataset)$/;"	v
+dataset	decision-tree-sklearn.py	/^dataset = pd.read_csv('petrol_consumption.csv')$/;"	v
 df	cleaner.py	/^df  = pd.read_csv("ile.csv")$/;"	v
+df	decision-tree-sklearn.py	/^df=pd.DataFrame({'Actual':y_test, 'Predicted':y_pred})  $/;"	v
 fig	3d-graph.py	/^fig = plt.figure()$/;"	v
+h	KNN-sklearn.py	/^h = .02  # step size in the mesh$/;"	v
 intercept	polinomial-regression-scikit-learn.py	/^intercept, coefficients = model.intercept_, model.coef_$/;"	v
-list_x	multiple-linear-regression-scikit-learn.py	/^list_x = [[0, 1], [5, 1], [15, 2], [25, 5], [35, 11], [45, 15], [55, 34], [60, 35]]$/;"	v
-list_x	simple-linear-regression-scikit-learn.py	/^list_x = [5, 15, 25, 35, 45, 55]$/;"	v
-list_y	multiple-linear-regression-scikit-learn.py	/^list_y = [5, 20, 14, 32, 22, 38, 43, 55]$/;"	v
-list_y	simple-linear-regression-scikit-learn.py	/^list_y = [5, 20, 14, 32, 22, 38]$/;"	v
+iris	KNN-sklearn.py	/^iris = datasets.load_iris()$/;"	v
+list_x	multiple-linear-regression-sklearn.py	/^list_x = [[0, 1], [5, 1], [15, 2], [25, 5], [35, 11], [45, 15], [55, 34], [60, 35]]$/;"	v
+list_x	simple-linear-regression-sklearn.py	/^list_x = [5, 15, 25, 35, 45, 55]$/;"	v
+list_y	multiple-linear-regression-sklearn.py	/^list_y = [5, 20, 14, 32, 22, 38, 43, 55]$/;"	v
+list_y	simple-linear-regression-sklearn.py	/^list_y = [5, 20, 14, 32, 22, 38]$/;"	v
 look_back	LSTM-RNN-Keras.py	/^look_back = 1$/;"	v
 model	3d-graph.py	/^model = ols("z ~ x + y", data).fit()$/;"	v
 model	LSTM-RNN-Keras.py	/^model = Sequential()$/;"	v
-model	multiple-linear-regression-scikit-learn.py	/^model = LinearRegression()$/;"	v
+model	multiple-linear-regression-sklearn.py	/^model = LinearRegression()$/;"	v
 model	polinomial-regression-scikit-learn.py	/^model = LinearRegression().fit(x_, y)$/;"	v
-model	simple-linear-regression-scikit-learn.py	/^model = LinearRegression()$/;"	v
+model	simple-linear-regression-sklearn.py	/^model = LinearRegression()$/;"	v
+n_neighbors	KNN-sklearn.py	/^n_neighbors = 15$/;"	v
 np	3d-graph.py	/^import numpy as np$/;"	I
-np	multiple-linear-regression-scikit-learn.py	/^import numpy as np$/;"	I
+np	KNN-sklearn.py	/^import numpy as np$/;"	I
+np	decision-tree-sklearn.py	/^import numpy as np  $/;"	I
+np	multiple-linear-regression-sklearn.py	/^import numpy as np$/;"	I
 np	polinomial-regression-scikit-learn.py	/^import numpy as np$/;"	I
-np	simple-linear-regression-scikit-learn.py	/^import numpy as np$/;"	I
+np	simple-linear-regression-sklearn.py	/^import numpy as np$/;"	I
 pd	cleaner.py	/^import pandas as pd$/;"	I
+pd	decision-tree-sklearn.py	/^import pandas as pd  $/;"	I
 plt	3d-graph.py	/^import matplotlib.pyplot as plt$/;"	I
+plt	KNN-sklearn.py	/^import matplotlib.pyplot as plt$/;"	I
 plt	LSTM-RNN-Keras.py	/^import matplotlib.pyplot as plt$/;"	I
 plt	cleaner.py	/^import matplotlib.pyplot as plt$/;"	I
+plt	decision-tree-sklearn.py	/^import matplotlib.pyplot as plt  $/;"	I
 r_sq	polinomial-regression-scikit-learn.py	/^r_sq = model.score(x_, y)$/;"	v
+regressor	decision-tree-sklearn.py	/^regressor = DecisionTreeRegressor()  $/;"	v
 scaler	LSTM-RNN-Keras.py	/^scaler = MinMaxScaler(feature_range=(0, 1))$/;"	v
 surf	3d-graph.py	/^surf = ax.plot_surface(X, Y, Z, cmap=plt.cm.coolwarm,$/;"	v
 test	LSTM-RNN-Keras.py	/^train, test = dataset[0:train_size,:], dataset[train_size:len(dataset),:]$/;"	v
@@ -75,12 +95,23 @@ x	cleaner.py	/^x = open('ile.csv')$/;"	v
 x	polinomial-regression-scikit-learn.py	/^x = [[0, 1], [5, 1], [15, 2], [25, 5], [35, 11], [45, 15], [55, 34], [60, 35]]$/;"	v
 x	polinomial-regression-scikit-learn.py	/^x, y = np.array(x), np.array(y)$/;"	v
 x_	polinomial-regression-scikit-learn.py	/^x_ = PolynomialFeatures(degree=2, include_bias=False).fit_transform(x)$/;"	v
-x_estimated	multiple-linear-regression-scikit-learn.py	/^x_estimated = np.array([[65, 45]])$/;"	v
-x_estimated	simple-linear-regression-scikit-learn.py	/^x_estimated = np.array([65])$/;"	v
-x_estimated	simple-linear-regression-scikit-learn.py	/^x_estimated = x_estimated.reshape((-1, 1))$/;"	v
+x_estimated	multiple-linear-regression-sklearn.py	/^x_estimated = np.array([[65, 45]])$/;"	v
+x_estimated	simple-linear-regression-sklearn.py	/^x_estimated = np.array([65])$/;"	v
+x_estimated	simple-linear-regression-sklearn.py	/^x_estimated = x_estimated.reshape((-1, 1))$/;"	v
+x_max	KNN-sklearn.py	/^    x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1$/;"	v
+x_min	KNN-sklearn.py	/^    x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1$/;"	v
+xx	KNN-sklearn.py	/^    xx, yy = np.meshgrid(np.arange(x_min, x_max, h),$/;"	v
+y	KNN-sklearn.py	/^y = iris.target$/;"	v
 y	cleaner.py	/^    y = i.split(',')$/;"	v
+y	decision-tree-sklearn.py	/^y = dataset['Petrol_Consumption']  $/;"	v
 y	polinomial-regression-scikit-learn.py	/^x, y = np.array(x), np.array(y)$/;"	v
 y	polinomial-regression-scikit-learn.py	/^y = [4, 5, 20, 14, 32, 22, 38, 43]$/;"	v
-y_estimated	multiple-linear-regression-scikit-learn.py	/^y_estimated = model.predict(x_estimated)$/;"	v
-y_estimated	simple-linear-regression-scikit-learn.py	/^y_estimated = model.predict(x_estimated)$/;"	v
+y_estimated	multiple-linear-regression-sklearn.py	/^y_estimated = model.predict(x_estimated)$/;"	v
+y_estimated	simple-linear-regression-sklearn.py	/^y_estimated = model.predict(array_x)$/;"	v
+y_max	KNN-sklearn.py	/^    y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1$/;"	v
+y_min	KNN-sklearn.py	/^    y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1$/;"	v
+y_pred	decision-tree-sklearn.py	/^y_pred = regressor.predict(X_test)$/;"	v
 y_pred	polinomial-regression-scikit-learn.py	/^y_pred = model.predict(x_)$/;"	v
+y_test	decision-tree-sklearn.py	/^X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)  $/;"	v
+y_train	decision-tree-sklearn.py	/^X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)  $/;"	v
+yy	KNN-sklearn.py	/^    xx, yy = np.meshgrid(np.arange(x_min, x_max, h),$/;"	v
