@@ -7,44 +7,40 @@
 !_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
 X	3d-graph.py	/^X = X.flatten()$/;"	v
 X	3d-graph.py	/^X, Y = np.meshgrid(x, x)$/;"	v
-X	KNN-sklearn.py	/^X = array_x$/;"	v
+X	KNN-sklearn.py	/^X = np.loadtxt('diabetes.csv', delimiter=",", skiprows=1, usecols=[7, 5]) $/;"	v
 Y	3d-graph.py	/^X, Y = np.meshgrid(x, x)$/;"	v
 Y	3d-graph.py	/^Y = Y.flatten()$/;"	v
 Z	3d-graph.py	/^Z = -5 + 3*X - 3*Y + 8 * np.random.normal(size=X.shape)$/;"	v
 Z	3d-graph.py	/^Z = Z.flatten()$/;"	v
 Z	KNN-sklearn.py	/^Z = Z.reshape(xx.shape)$/;"	v
-Z	KNN-sklearn.py	/^Z = clf.predict(np.c_[xx.ravel(), yy.ravel()])$/;"	v
-Z	decision-tree-sklearn_asd.py	/^Z = Z.reshape(xx.shape)$/;"	v
-Z	decision-tree-sklearn_asd.py	/^Z = clf.predict(np.c_[xx.ravel(), yy.ravel()])$/;"	v
+Z	KNN-sklearn.py	/^Z = model.predict(np.c_[xx.ravel(), yy.ravel()])$/;"	v
+Z	decision-tree-sklearn.py	/^Z = Z.reshape(xx.shape)$/;"	v
+Z	decision-tree-sklearn.py	/^Z = clf.predict(np.c_[xx.ravel(), yy.ravel()])$/;"	v
 anova_results	3d-graph.py	/^anova_results = anova_lm(model)$/;"	v
-array_x	KNN-sklearn.py	/^array_x = np.loadtxt('diabetes.csv', delimiter=",", skiprows=1, usecols=[7, 5]) $/;"	v
-array_x	decision-tree-sklearn_asd.py	/^array_x = np.loadtxt('diabetes.csv', delimiter=",", skiprows=1, usecols=[7, 5]) $/;"	v
+array_x	decision-tree-sklearn.py	/^array_x = np.loadtxt('diabetes.csv', delimiter=",", skiprows=1, usecols=[7, 5]) $/;"	v
 array_x	multiple-linear-regression-sklearn.py	/^array_x = np.loadtxt('diabetes.csv', delimiter=",", skiprows=1, usecols=[7, 5]) $/;"	v
-array_x	polinomial-regression-sklearn.py	/^array_x = np.loadtxt('diabetes.csv', delimiter=",", skiprows=1, usecols=[7, 5]) $/;"	v
 array_x	simple-linear-regression-sklearn.py	/^array_x = array_x.reshape((-1, 1))$/;"	v
 array_x	simple-linear-regression-sklearn.py	/^array_x = np.array(list_x)$/;"	v
-array_y	KNN-sklearn.py	/^array_y = np.loadtxt('diabetes.csv', delimiter=",", skiprows=1, usecols=[8]) $/;"	v
-array_y	decision-tree-sklearn_asd.py	/^array_y = np.loadtxt('diabetes.csv', delimiter=",", skiprows=1, usecols=[8]) $/;"	v
+array_y	decision-tree-sklearn.py	/^array_y = np.loadtxt('diabetes.csv', delimiter=",", skiprows=1, usecols=[8]) $/;"	v
 array_y	multiple-linear-regression-sklearn.py	/^array_y = np.loadtxt('diabetes.csv', delimiter=",", skiprows=1, usecols=[8]) $/;"	v
-array_y	polinomial-regression-sklearn.py	/^array_y = np.loadtxt('diabetes.csv', delimiter=",", skiprows=1, usecols=[8]) $/;"	v
 array_y	simple-linear-regression-sklearn.py	/^array_y = np.array(list_y)$/;"	v
 ax	3d-graph.py	/^ax = fig.gca(projection='3d')$/;"	v
-ax	KNN-sklearn.py	/^ax = fig.add_subplot(111, projection='3d')$/;"	v
+ax	KNN-sklearn.py	/^ax = fig.add_subplot(111)$/;"	v
 ax	multiple-linear-regression-sklearn.py	/^ax = fig.add_subplot(111, projection='3d')$/;"	v
-ax	polinomial-regression-sklearn.py	/^ax = fig.add_subplot(111, projection='3d')$/;"	v
-ay	KNN-sklearn.py	/^ay = figu.add_subplot(111, projection='3d')$/;"	v
-ay	multiple-linear-regression-sklearn.py	/^ay = figu.add_subplot(111, projection='3d')$/;"	v
-ay	polinomial-regression-sklearn.py	/^ay = figu.add_subplot(111, projection='3d')$/;"	v
-clf	KNN-sklearn.py	/^clf = neighbors.KNeighborsClassifier(n_neighbors, weights='distance')$/;"	v
-clf	decision-tree-sklearn_asd.py	/^clf = clf.fit(array_x, array_y)$/;"	v
-clf	decision-tree-sklearn_asd.py	/^clf = tree.DecisionTreeClassifier()$/;"	v
-cmap_bold	KNN-sklearn.py	/^cmap_bold = ListedColormap(['#FF0000', '#00FF00', '#0000FF'])$/;"	v
-cmap_light	KNN-sklearn.py	/^cmap_light = ListedColormap(['#FFAAAA', '#AAFFAA', '#AAAAFF'])$/;"	v
-colors	KNN-sklearn.py	/^colors = ListedColormap(['#0000FF', '#FF0000'])$/;"	v
+ax2	multiple-linear-regression-sklearn.py	/^ax2 = fig2.add_subplot(111, projection='3d')$/;"	v
+ax2	polynomial-regression-sklearn.py	/^ax2 = fig2.add_subplot(111, projection='3d')$/;"	v
+clf	decision-tree-sklearn.py	/^clf = clf.fit(array_x, array_y)$/;"	v
+clf	decision-tree-sklearn.py	/^clf = tree.DecisionTreeClassifier(max_depth = 3)$/;"	v
+cmap_bold	KNN-sklearn.py	/^cmap_bold = ListedColormap(['#0000FF', '#FF0000'])$/;"	v
+cmap_bold	decision-tree-sklearn.py	/^cmap_bold = ListedColormap(['#0000FF', '#FF0000'])$/;"	v
+cmap_light	KNN-sklearn.py	/^cmap_light = ListedColormap(['#3333FF', '#FF3333'])$/;"	v
+cmap_light	decision-tree-sklearn.py	/^cmap_light = ListedColormap(['#3333FF', '#FF3333'])$/;"	v
+coefficients	multiple-linear-regression-sklearn.py	/^intercept, coefficients = model.intercept_, model.coef_$/;"	v
+coefficients	polynomial-regression-sklearn.py	/^intercept, coefficients = model.intercept_, model.coef_$/;"	v
 colors	multiple-linear-regression-sklearn.py	/^colors = ListedColormap(['#0000FF', '#FF0000'])$/;"	v
-colors	polinomial-regression-sklearn.py	/^colors = ListedColormap(['#0000FF', '#FF0000'])$/;"	v
+colors	polynomial-regression-sklearn.py	/^colors = ListedColormap(['#0000FF', '#FF0000'])$/;"	v
 create_dataset	LSTM-RNN-Keras.py	/^def create_dataset(dataset, look_back=1):$/;"	f
-cs	decision-tree-sklearn_asd.py	/^cs = plt.contourf(xx, yy, Z, cmap=plt.cm.RdYlBu)$/;"	v
+cs	decision-tree-sklearn.py	/^cs = plt.contourf(xx, yy, Z, cmap=cmap_light)$/;"	v
 data	3d-graph.py	/^data = pandas.DataFrame({'x': X, 'y': Y, 'z': Z})$/;"	v
 dataframe	LSTM-RNN-Keras.py	/^dataframe = pandas.read_csv('international-airline-passengers.csv', usecols=[1], engine='python'/;"	v
 dataset	LSTM-RNN-Keras.py	/^dataset = dataframe.values$/;"	v
@@ -54,43 +50,42 @@ df	cleaner.py	/^df  = pd.read_csv("ile.csv")$/;"	v
 fig	3d-graph.py	/^fig = plt.figure()$/;"	v
 fig	KNN-sklearn.py	/^fig = plt.figure()$/;"	v
 fig	multiple-linear-regression-sklearn.py	/^fig = plt.figure()$/;"	v
-fig	polinomial-regression-sklearn.py	/^fig = plt.figure()$/;"	v
-figu	KNN-sklearn.py	/^figu = plt.figure()$/;"	v
-figu	multiple-linear-regression-sklearn.py	/^figu = plt.figure()$/;"	v
-figu	polinomial-regression-sklearn.py	/^figu = plt.figure()$/;"	v
-h	KNN-sklearn.py	/^h = .05  # step size in the mesh$/;"	v
-idx	decision-tree-sklearn_asd.py	/^    idx = np.where(array_y == i)$/;"	v
+fig2	multiple-linear-regression-sklearn.py	/^fig2 = plt.figure()$/;"	v
+fig2	polynomial-regression-sklearn.py	/^fig2 = plt.figure()$/;"	v
+h	KNN-sklearn.py	/^h = .25  # step size in the mesh$/;"	v
+idx	decision-tree-sklearn.py	/^    idx = np.where(array_y == i)$/;"	v
+intercept	multiple-linear-regression-sklearn.py	/^intercept, coefficients = model.intercept_, model.coef_$/;"	v
+intercept	polynomial-regression-sklearn.py	/^intercept, coefficients = model.intercept_, model.coef_$/;"	v
 list_x	simple-linear-regression-sklearn.py	/^list_x = [5, 15, 25, 35, 45, 55]$/;"	v
 list_y	simple-linear-regression-sklearn.py	/^list_y = [5, 20, 14, 32, 22, 38]$/;"	v
 look_back	LSTM-RNN-Keras.py	/^look_back = 1$/;"	v
 model	3d-graph.py	/^model = ols("z ~ x + y", data).fit()$/;"	v
-model	KNN-sklearn.py	/^model = LinearRegression()$/;"	v
+model	KNN-sklearn.py	/^model = neighbors.KNeighborsClassifier(n_neighbors, weights='distance')$/;"	v
 model	LSTM-RNN-Keras.py	/^model = Sequential()$/;"	v
 model	multiple-linear-regression-sklearn.py	/^model = LinearRegression()$/;"	v
-model	polinomial-regression-sklearn.py	/^model = LinearRegression().fit(x_, y) $/;"	v
+model	polynomial-regression-sklearn.py	/^model = LinearRegression().fit(x_, y) $/;"	v
 model	simple-linear-regression-sklearn.py	/^model = LinearRegression()$/;"	v
-n_classes	decision-tree-sklearn_asd.py	/^n_classes = 3$/;"	v
-n_neighbors	KNN-sklearn.py	/^n_neighbors = 15$/;"	v
+n_classes	decision-tree-sklearn.py	/^n_classes = 3$/;"	v
+n_neighbors	KNN-sklearn.py	/^n_neighbors = 50 $/;"	v
 np	3d-graph.py	/^import numpy as np$/;"	I
 np	KNN-sklearn.py	/^import numpy as np$/;"	I
-np	decision-tree-sklearn_asd.py	/^import numpy as np  $/;"	I
-np	decision-tree-sklearn_asd.py	/^import numpy as np$/;"	I
+np	decision-tree-sklearn.py	/^import numpy as np  $/;"	I
 np	multiple-linear-regression-sklearn.py	/^import numpy as np$/;"	I
-np	polinomial-regression-sklearn.py	/^import numpy as np$/;"	I
+np	polynomial-regression-sklearn.py	/^import numpy as np$/;"	I
 np	simple-linear-regression-sklearn.py	/^import numpy as np$/;"	I
 pd	cleaner.py	/^import pandas as pd$/;"	I
-pd	decision-tree-sklearn_asd.py	/^import pandas as pd  $/;"	I
-plot_colors	decision-tree-sklearn_asd.py	/^plot_colors = "rb"$/;"	v
-plot_step	decision-tree-sklearn_asd.py	/^plot_step = 0.10$/;"	v
+plot_colors	decision-tree-sklearn.py	/^plot_colors = "br"$/;"	v
+plot_step	decision-tree-sklearn.py	/^plot_step = 0.10$/;"	v
 plt	3d-graph.py	/^import matplotlib.pyplot as plt$/;"	I
 plt	KNN-sklearn.py	/^import matplotlib.pyplot as plt$/;"	I
 plt	LSTM-RNN-Keras.py	/^import matplotlib.pyplot as plt$/;"	I
 plt	cleaner.py	/^import matplotlib.pyplot as plt$/;"	I
-plt	decision-tree-sklearn_asd.py	/^import matplotlib.pyplot as plt  $/;"	I
-plt	decision-tree-sklearn_asd.py	/^import matplotlib.pyplot as plt$/;"	I
+plt	decision-tree-sklearn.py	/^import matplotlib.pyplot as plt  $/;"	I
 plt	multiple-linear-regression-sklearn.py	/^import matplotlib.pyplot as plt$/;"	I
-plt	polinomial-regression-sklearn.py	/^import matplotlib.pyplot as plt$/;"	I
-pred	KNN-sklearn.py	/^pred = clf.predict(array_x)$/;"	v
+plt	polynomial-regression-sklearn.py	/^import matplotlib.pyplot as plt$/;"	I
+r_sq	multiple-linear-regression-sklearn.py	/^r_sq = model.score(array_x, array_y)$/;"	v
+r_sq	polynomial-regression-sklearn.py	/^r_sq = model.score(x_, y)$/;"	v
+results	multiple-linear-regression-sklearn.py	/^results = model.fit(array_x, array_y)$/;"	v
 scaler	LSTM-RNN-Keras.py	/^scaler = MinMaxScaler(feature_range=(0, 1))$/;"	v
 surf	3d-graph.py	/^surf = ax.plot_surface(X, Y, Z, cmap=plt.cm.coolwarm,$/;"	v
 test	LSTM-RNN-Keras.py	/^train, test = dataset[0:train_size,:], dataset[train_size:len(dataset),:]$/;"	v
@@ -116,30 +111,29 @@ train_size	LSTM-RNN-Keras.py	/^train_size = int(len(dataset) * 0.67)$/;"	v
 x	3d-graph.py	/^x = np.linspace(0, 20, 20)$/;"	v
 x	cleaner.py	/^x = list(x)$/;"	v
 x	cleaner.py	/^x = open('ile.csv')$/;"	v
-x	polinomial-regression-sklearn.py	/^x, y = array_x, array_y $/;"	v
-x_	polinomial-regression-sklearn.py	/^x_ = PolynomialFeatures(degree=2, include_bias=False).fit_transform(x)$/;"	v
+x	polynomial-regression-sklearn.py	/^x = np.loadtxt('diabetes.csv', delimiter=",", skiprows=1, usecols=[7, 5]) $/;"	v
+x_	polynomial-regression-sklearn.py	/^x_ = PolynomialFeatures(degree=3, include_bias=False).fit_transform(x)$/;"	v
 x_estimated	simple-linear-regression-sklearn.py	/^x_estimated = np.array([65])$/;"	v
 x_estimated	simple-linear-regression-sklearn.py	/^x_estimated = x_estimated.reshape((-1, 1))$/;"	v
 x_max	KNN-sklearn.py	/^x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1$/;"	v
-x_max	decision-tree-sklearn_asd.py	/^x_min, x_max = array_x[:, 0].min() - 1, array_x[:, 0].max() + 1$/;"	v
+x_max	decision-tree-sklearn.py	/^x_min, x_max = array_x[:, 0].min() - 1, array_x[:, 0].max() + 1$/;"	v
 x_min	KNN-sklearn.py	/^x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1$/;"	v
-x_min	decision-tree-sklearn_asd.py	/^x_min, x_max = array_x[:, 0].min() - 1, array_x[:, 0].max() + 1$/;"	v
+x_min	decision-tree-sklearn.py	/^x_min, x_max = array_x[:, 0].min() - 1, array_x[:, 0].max() + 1$/;"	v
 xx	KNN-sklearn.py	/^xx, yy = np.meshgrid(np.arange(x_min, x_max, h),$/;"	v
-xx	decision-tree-sklearn_asd.py	/^xx, yy = np.meshgrid(np.arange(x_min, x_max, plot_step),$/;"	v
-y	KNN-sklearn.py	/^y = array_y$/;"	v
+xx	decision-tree-sklearn.py	/^xx, yy = np.meshgrid(np.arange(x_min, x_max, plot_step),$/;"	v
+y	KNN-sklearn.py	/^y = np.loadtxt('diabetes.csv', delimiter=",", skiprows=1, usecols=[8]) $/;"	v
 y	cleaner.py	/^    y = i.split(',')$/;"	v
-y	polinomial-regression-sklearn.py	/^x, y = array_x, array_y $/;"	v
-y_estimated	KNN-sklearn.py	/^y_estimated = model.predict(array_x)$/;"	v
+y	polynomial-regression-sklearn.py	/^y = np.loadtxt('diabetes.csv', delimiter=",", skiprows=1, usecols=[8]) $/;"	v
 y_estimated	multiple-linear-regression-sklearn.py	/^y_estimated = model.predict(array_x)$/;"	v
 y_estimated	simple-linear-regression-sklearn.py	/^y_estimated = model.predict(array_x)$/;"	v
-y_estimated_round	KNN-sklearn.py	/^y_estimated_round = []$/;"	v
 y_estimated_round	multiple-linear-regression-sklearn.py	/^y_estimated_round = []$/;"	v
-y_estimated_round	polinomial-regression-sklearn.py	/^y_estimated_round = []$/;"	v
+y_estimated_round	polynomial-regression-sklearn.py	/^y_estimated_round = []$/;"	v
 y_max	KNN-sklearn.py	/^y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1$/;"	v
-y_max	decision-tree-sklearn_asd.py	/^y_min, y_max = array_x[:, 1].min() - 1, array_x[:, 1].max() + 1$/;"	v
+y_max	decision-tree-sklearn.py	/^y_min, y_max = array_x[:, 1].min() - 1, array_x[:, 1].max() + 1$/;"	v
 y_min	KNN-sklearn.py	/^y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1$/;"	v
-y_min	decision-tree-sklearn_asd.py	/^y_min, y_max = array_x[:, 1].min() - 1, array_x[:, 1].max() + 1$/;"	v
-y_pred	decision-tree-sklearn_asd.py	/^y_pred = clf.predict(array_x)$/;"	v
-y_pred	polinomial-regression-sklearn.py	/^y_pred = model.predict(x_) $/;"	v
+y_min	decision-tree-sklearn.py	/^y_min, y_max = array_x[:, 1].min() - 1, array_x[:, 1].max() + 1$/;"	v
+y_pred	KNN-sklearn.py	/^y_pred = model.predict(X)$/;"	v
+y_pred	decision-tree-sklearn.py	/^y_pred = clf.predict(array_x)$/;"	v
+y_pred	polynomial-regression-sklearn.py	/^y_pred = model.predict(x_) $/;"	v
 yy	KNN-sklearn.py	/^xx, yy = np.meshgrid(np.arange(x_min, x_max, h),$/;"	v
-yy	decision-tree-sklearn_asd.py	/^xx, yy = np.meshgrid(np.arange(x_min, x_max, plot_step),$/;"	v
+yy	decision-tree-sklearn.py	/^xx, yy = np.meshgrid(np.arange(x_min, x_max, plot_step),$/;"	v
