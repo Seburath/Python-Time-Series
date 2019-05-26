@@ -40,7 +40,7 @@ Z = Z.reshape(xx.shape)
 cs = plt.contourf(xx, yy, Z, cmap=cmap_light)
 
 # Plot the training points
-for i, color in zip(range(n_classes), cmap_bold):
+for i, color in zip(range(n_classes), plot_colors):
     idx = np.where(array_y == i)
     plt.scatter(array_x[idx, 0], array_x[idx, 1], c=color,
                 cmap=plt.cm.RdYlBu, edgecolor='black', s=15)
