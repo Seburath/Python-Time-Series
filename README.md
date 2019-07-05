@@ -1,5 +1,5 @@
-Theory: a good code don't need comments
+Theory: A good code don't need comments
 
-Practice: this mess... XD
+Practice: This mess... XD
 
 I hope someone will find this usefull too! :)
