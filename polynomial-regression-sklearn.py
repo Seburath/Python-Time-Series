@@ -11,7 +11,7 @@ x = np.loadtxt('diabetes.csv', delimiter=",", skiprows=1, usecols=[7, 5])
 
 x_ = PolynomialFeatures(degree=3, include_bias=False).fit_transform(x)
 
-# Step 3: Create a model and fit it
+# Step 3: =Create a model and fit it
 model = LinearRegression().fit(x_, y) 
 # Step 5: Predict
 y_estimated_round = []
