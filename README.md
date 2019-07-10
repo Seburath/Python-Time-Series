@@ -1,5 +1,10 @@
-Theory: A good code don't need comments
+# Python Time Series
+Examples of diferent methods for time series analysis.
 
-Practice: This mess... XD
+IbPy2 and tws-api are both wrapers for the java API of the TWS platform of Interactive Brokers.
 
-I hope someone will find this usefull too! :)
+<img
+  src="series.png"
+  alt="series"
+  width="100%"
+/>
